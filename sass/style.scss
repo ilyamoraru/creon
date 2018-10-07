@@ -636,6 +636,7 @@ img {
 
   .corp-list {
     margin-top: 30px;
+    margin-bottom: 160px;
   }
 
   .corp-title {
@@ -721,6 +722,7 @@ img {
     .corp-bottom {
       height: auto;
       opacity: 1;
+      padding-top: 24px;
     }
   }
 
@@ -800,6 +802,11 @@ img {
       background-repeat: no-repeat;
       background-size: cover;
 
+      @media screen and (max-width: 1280px) {
+        width: 250px;
+        height: 250px;
+      }
+
       &:hover {
         img {
           transform: translateX(10px);
@@ -809,6 +816,106 @@ img {
 
   }
 
+}
+
+//corporate page
+
+.strategy-page {
+  .corp2-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -2.4%;
+    margin-top: 60px;
+
+  }
+
+  .corp2-item {
+    margin: 0 2.4%;
+    width: 11%;
+    margin-bottom: 53px;
+
+    img {
+      max-width: 71px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: HR, Arial, sans-serif;
+      font-size: 12px;
+      color: #575757;
+      max-width: 107px;
+    }
+
+    .corp21 {
+      max-width: 71.35px;
+    }
+
+    .corp22 {
+      max-width: 29.19px;
+    }
+
+    .corp23 {
+      max-width: 42.07px;
+    }
+
+    .corp24 {
+      max-width: 51px;
+    }
+
+    .corp25 {
+      max-width: 55px;
+    }
+
+    .corp26 {
+      max-width: 47px;
+    }
+
+    .corp27 {
+      max-width: 80px;
+    }
+
+    .corp28 {
+      max-width: 69.6px;
+    }
+
+    .corp29 {
+      max-width: 41px;
+    }
+
+    .corp210 {
+      max-width: 25.45px;
+    }
+
+    .corp211 {
+      max-width: 57px;
+    }
+  }
+
+
+  .corp-item .corp-top {
+    padding-left: 0;
+  }
+
+  .corp-bottom {
+    padding-left: 0;
+  }
+
+}
+
+//project page
+
+.project-page {
+  .corp-item .corp-top {
+     padding-left: 83px;
+
+    img {
+      max-width: 55px;
+    }
+   }
+
+  .corp-list {
+    margin-bottom: 60px;
+  }
 }
 
 //media quaries

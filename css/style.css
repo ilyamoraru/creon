@@ -765,6 +765,7 @@ img {
 
 .corporate-page .corp-list {
   margin-top: 30px;
+  margin-bottom: 160px;
 }
 
 .corporate-page .corp-title {
@@ -858,6 +859,7 @@ img {
 .corporate-page .open-item .corp-bottom {
   height: auto;
   opacity: 1;
+  padding-top: 24px;
 }
 
 .corporate-page .corp-bottom {
@@ -959,10 +961,111 @@ img {
           background-size: cover;
 }
 
+@media screen and (max-width: 1280px) {
+  .corporate-page .corp-cont .link {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 .corporate-page .corp-cont .link:hover img {
   -webkit-transform: translateX(10px);
       -ms-transform: translateX(10px);
           transform: translateX(10px);
+}
+
+.strategy-page .corp2-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 -2.4%;
+  margin-top: 60px;
+}
+
+.strategy-page .corp2-item {
+  margin: 0 2.4%;
+  width: 11%;
+  margin-bottom: 53px;
+}
+
+.strategy-page .corp2-item img {
+  max-width: 71px;
+  margin-bottom: 20px;
+}
+
+.strategy-page .corp2-item p {
+  font-family: HR, Arial, sans-serif;
+  font-size: 12px;
+  color: #575757;
+  max-width: 107px;
+}
+
+.strategy-page .corp2-item .corp21 {
+  max-width: 71.35px;
+}
+
+.strategy-page .corp2-item .corp22 {
+  max-width: 29.19px;
+}
+
+.strategy-page .corp2-item .corp23 {
+  max-width: 42.07px;
+}
+
+.strategy-page .corp2-item .corp24 {
+  max-width: 51px;
+}
+
+.strategy-page .corp2-item .corp25 {
+  max-width: 55px;
+}
+
+.strategy-page .corp2-item .corp26 {
+  max-width: 47px;
+}
+
+.strategy-page .corp2-item .corp27 {
+  max-width: 80px;
+}
+
+.strategy-page .corp2-item .corp28 {
+  max-width: 69.6px;
+}
+
+.strategy-page .corp2-item .corp29 {
+  max-width: 41px;
+}
+
+.strategy-page .corp2-item .corp210 {
+  max-width: 25.45px;
+}
+
+.strategy-page .corp2-item .corp211 {
+  max-width: 57px;
+}
+
+.strategy-page .corp-item .corp-top {
+  padding-left: 0;
+}
+
+.strategy-page .corp-bottom {
+  padding-left: 0;
+}
+
+.project-page .corp-item .corp-top {
+  padding-left: 83px;
+}
+
+.project-page .corp-item .corp-top img {
+  max-width: 55px;
+}
+
+.project-page .corp-list {
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 1024px) {
