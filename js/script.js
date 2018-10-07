@@ -154,7 +154,16 @@ $(document).ready(function() {
         $('.part-modal').removeClass('part-modal_show');
     });
 
+    //contacts toogle maps
 
+    $('.contacts-item').click(function() {
+       $('.contacts-item').removeClass('open-item_cont');
+       $(this).addClass('open-item_cont');
+
+       var number_map = $(this).attr('data-address');
+       $('.map').css('display', 'none');
+       $('#cont'+number_map+'-map').css('display', 'block');
+    });
 
 
 
