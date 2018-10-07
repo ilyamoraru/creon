@@ -1847,6 +1847,14 @@ img {
       line-height: 120%;
       max-width: 631px;
 
+     @media screen and (max-width: 1280px) {
+       max-width: 600px;
+     }
+
+      @media screen and (max-width: 1024px) {
+        max-width: 500px;
+      }
+
     }
 
     .link {

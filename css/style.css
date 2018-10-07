@@ -2162,6 +2162,18 @@ img {
   max-width: 631px;
 }
 
+@media screen and (max-width: 1280px) {
+  .green-page .green-block1 .desc {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .green-page .green-block1 .desc {
+    max-width: 500px;
+  }
+}
+
 .green-page .green-block1 .link {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
