@@ -106,7 +106,18 @@ img {
       font-family: HR, Arial, sans-serif;
       font-size: 18px;
       color: white;
+      height: 40px;
+      padding: 10px 10px 10px 45px;
+
+      &:hover {
+        background: #194D92;
+      }
     }
+  }
+
+  .this-nav a {
+    background: #194D92;
+    color: white;
   }
 
   .language-header {
@@ -158,6 +169,11 @@ img {
 
   .header-nav_list a {
     color: black;
+  }
+
+  .this-nav a {
+    background: #194D92;
+    color: white;
   }
 }
 
@@ -918,6 +934,619 @@ img {
   }
 }
 
+//about page
+
+.about-page {
+  padding-bottom: 95px;
+
+  .page-title {
+    color: white;
+    max-width: 800px;
+  }
+
+  .about-block1 {
+    padding-top: 187px;
+    padding-bottom: 68px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .about-cont {
+    position: absolute;
+    right: 0;
+    top: -282/2*1px;
+    max-width: 342px;
+    padding-right: 0;
+    margin-right: 0;
+
+    img {
+      margin-bottom: 45px;
+
+    }
+
+      .boss-name {
+        font-family: HB, Arial, sans-serif;
+        color: black;
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+
+      .boss-desc {
+        font-family: HR, Arial, sans-serif;
+        font-size: 18px;
+        color: #575757;
+        max-width: 216px;
+      }
+  }
+
+  .about-wrap {
+    position: relative;
+    padding-top: 76px;
+  }
+
+  .page-content {
+    margin-bottom: 30px;
+  }
+
+  .grey-bg {
+    background: #F2F2F2;
+    padding: 57px;
+    margin-top: 58px;
+    margin-bottom: 76px;
+  }
+
+  .date-slider_wrap {
+    position: relative;
+    margin-bottom: 140px;
+
+    .title {
+      font-family: HR, Arial, sans-serif;
+      font-size: 48px;
+      color: #171717;
+      position: absolute;
+      top: 116px;
+      left: 8%;
+      z-index: 2;
+    }
+
+    .slick-prev {
+      font-size: 0;
+      background: none;
+      border: none;
+      position: absolute;
+      z-index: 3;
+      width: 48px;
+      height: 20px;
+      cursor: pointer;
+      top: 345px;
+      left: 8%;
+      transition: $anim;
+      padding: 0;
+
+      &:hover {
+        transform: translateX(-10px);
+      }
+
+      &::before {
+        content: url('../img/icons/right_arrow.svg');
+        width: 48px;
+        height: 20px;
+        display: block;
+      }
+    }
+
+    .slick-next {
+      font-size: 0;
+      background: none;
+      border: none;
+      position: absolute;
+      z-index: 3;
+      width: 48px;
+      height: 20px;
+      cursor: pointer;
+      top: 345px;
+      right: 8%;
+      transition: $anim;
+
+      &:hover {
+        transform: translateX(10px);
+      }
+
+      &::before {
+        content: url('../img/icons/left_arrow.svg');
+        width: 48px;
+        height: 20px;
+        display: block;
+      }
+    }
+
+    .dots-cont {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      top: 269px;
+      z-index: 2;
+
+
+      button {
+        font-family: HR, Arial, sans-serif;
+        font-size: 36px;
+        color: white;
+        opacity: 0.5;
+        transition: $anim;
+        cursor: pointer;
+        background: none;
+        border: 0;
+        margin: 0 5%;
+        outline: none;
+
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+
+      .date9 {
+        color: #1C1C1C;
+      }
+
+      .dots-left {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+        &:hover button {
+          opacity: 1;
+        }
+      }
+
+      .dots-right {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+
+        &:hover button {
+          opacity: 1;
+        }
+      }
+
+      .active-btn {
+        opacity: 1;
+        transform: scale(1.3);
+      }
+    }
+
+  }
+
+  .date-slide {
+    padding-top: 440px;
+    padding-bottom: 290px;
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    background-position-y: 100%;
+
+    p {
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: #575757;
+      margin-bottom: 30px;
+    }
+  }
+
+  .bosses-slider {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 95px;
+
+    .slick-dots {
+      display: flex;
+      align-self: center;
+      margin-top: 60px;
+
+
+      button {
+        padding: 0;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        border: none;
+        font-size: 0;
+        background: #C5C5C5;
+        cursor: pointer;
+        outline: none;
+        margin: 0 7px;
+        transition: $anim;
+      }
+
+      .slick-active button {
+        width: 17px;
+        height: 17px;
+        background: #194D92;
+      }
+    }
+  }
+
+  .boss-slide {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .inner-slide {
+        bottom: 0;
+      }
+    }
+
+    .inner-slide {
+      background: #194D92;
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.4s linear;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+
+      &::before {
+        content: url('../img/icons/left_arrow.svg');
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+      }
+
+      .name {
+        font-family: HB, Arial, sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: white;
+      }
+
+      .position {
+        font-family: HR, Arial, sans-serif;
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+
+  .partners-slider {
+    display: flex;
+    margin-bottom: 185px;
+    margin-top: 60px;
+
+    .partner-slide {
+      width: 25%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+      border: 1px solid #ececec;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        .inner-slide {
+          bottom: 0;
+        }
+      }
+
+      img {
+        max-width: 140px;
+      }
+
+      .inner-slide {
+        background: #194D92;
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s linear;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+          content: url('../img/icons/left_arrow.svg');
+          position: absolute;
+          bottom: 40px;
+          right: 40px;
+        }
+
+        .name {
+          font-family: HB, Arial, sans-serif;
+          font-size: 18px;
+          margin-bottom: 10px;
+          color: white;
+        }
+
+        .position {
+          font-family: HR, Arial, sans-serif;
+          font-size: 18px;
+          color: white;
+        }
+
+      }
+    }
+  }
+
+  .custom-title {
+    margin-bottom: 35px;
+  }
+
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+
+  .client {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 0 40px;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+    transition: $anim;
+    opacity: 0.5;
+    filter: grayscale(1);
+
+    &:hover {
+      opacity: 1;
+      filter: none;
+    }
+  }
+
+  .hidden-client {
+    display: none;
+  }
+
+  .showmore-client {
+    margin: 0 auto;
+    font-family: HR, Arial, sans-serif;
+    font-size: 18px;
+    color: #194d92;
+    cursor: pointer;
+    border: none;
+    background: none;
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background: #194d92;
+      top: 13px;
+      left: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 30px;
+      width: 2px;
+      background: #194d92;
+      top: 0;
+      left: 15px;
+    }
+  }
+}
+
+//boss modal
+
+.boss-modal {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 0;
+  z-index: -9999;
+
+
+  .left {
+    min-width: 40vw;
+
+  }
+
+  .right {
+    padding-top: 61px;
+    padding-right: 114px;
+    padding-left: 114/1366*100%;
+  }
+
+  .name {
+    font-family: HR, Arial, sans-serif;
+    font-size: 48px;
+    color: #171717;
+    margin-bottom: 16px;
+  }
+
+  .role {
+    font-family: HR, Arial, sans-serif;
+    font-size: 18px;
+    color: #171717;
+    margin-bottom: 75px;
+  }
+
+  .desc {
+    font-family: HR, Arial, sans-serif;
+    font-size: 18px;
+    color: #575757;
+    margin-bottom: 20px;
+  }
+
+  .close-modal {
+    width: 71px;
+    height: 71px;
+    background: #171717;
+    transition: $anim;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    right: 0;
+    top: 0;
+
+    &:hover {
+      background: #194D92;
+    }
+
+    &::before {
+      content: '';
+      width: 21px;
+      height: 2px;
+      background: white;
+      position: absolute;
+      top: 35px;
+      left: 27px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: '';
+      width: 21px;
+      height: 2px;
+      background: white;
+      position: absolute;
+      top: 35px;
+      left: 27px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+//part modal
+
+.part-modal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  z-index: -9999;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top:0;
+  background: white;
+
+  .left {
+    min-width: 40vw;
+    height: 100vh;
+    position: relative;
+
+    .logo {
+      position: absolute;
+      z-index: 9;
+      max-width: 225px;
+      width: 225px;
+      left: calc(50% - 225px/2);
+      top: calc(50% - 225px/2);
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    padding: 61px 114px 45px 114/1366*100%;
+  }
+
+  .name {
+    font-family: HR, Arial, sans-serif;
+    font-size: 48px;
+    color: #171717;
+    margin-bottom: 16px;
+  }
+
+  .site {
+    font-family: HR, Arial, sans-serif;
+    font-size: 18px;
+    color: #194D92;
+    margin-top: auto;
+  }
+
+  .role {
+    font-family: HR, Arial, sans-serif;
+    font-size: 18px;
+    color: #171717;
+    margin-bottom: 75px;
+  }
+
+  .desc {
+    font-family: HR, Arial, sans-serif;
+    font-size: 18px;
+    color: #575757;
+    margin-bottom: 20px;
+  }
+
+  .close-modal {
+    width: 71px;
+    height: 71px;
+    background: #171717;
+    transition: $anim;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    right: 0;
+    top: 0;
+
+    &:hover {
+      background: #194D92;
+    }
+
+    &::before {
+      content: '';
+      width: 21px;
+      height: 2px;
+      background: white;
+      position: absolute;
+      top: 35px;
+      left: 27px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: '';
+      width: 21px;
+      height: 2px;
+      background: white;
+      position: absolute;
+      top: 35px;
+      left: 27px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.part-modal_show {
+  opacity: 1;
+  animation: zIndex 0.1s linear forwards;
+  transition: 0.3s linear all;
+}
+
+.boss-modal_show {
+  opacity: 1;
+  animation: zIndex 0.1s linear forwards;
+  transition: all 0.3s linear;
+}
+
 //media quaries
 
 @media screen and (max-width: 1024px) {
@@ -936,6 +1565,6 @@ img {
   }
 
   to {
-    z-index: 2;
+    z-index: 10;
   }
 }

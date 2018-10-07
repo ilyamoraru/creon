@@ -11,6 +11,36 @@ $(document).ready(function() {
         fade: true,
     });
 
+    $('.about-slider_date').slick({
+        arrows: true,
+        dots: false,
+        infinite: false,
+        fade: true,
+    });
+
+    //nav in about page dates
+
+    $('.dots-cont button').click(function() {
+        $('.dots-cont button').removeClass('active-btn');
+        $(this).addClass('active-btn');
+        var number_slide = $(this).attr('data-slide');
+
+        $('.about-slider_date').slick('slickGoTo', number_slide);
+    });
+
+    $('.about-slider_date').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+        $('.dots-cont button').removeClass('active-btn');
+       var number_slide = currentSlide;
+       $('.date'+number_slide).addClass('active-btn');
+    });
+
+    $('.bosses-slider').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+    });
+
    //header scroll
 
     //for desctop
@@ -89,5 +119,43 @@ $(document).ready(function() {
            $(this).find('.show-btn').addClass('show-btn_open');
        }
     });
+
+    //считаем колиество постов на about
+
+    var length_posts = $('.hidden-client').length;
+
+    $('.showmore-client span').html(length_posts);
+
+    $('.showmore-client').click(function() {
+       $(this).hide();
+       $('.hidden-client').removeClass('hidden-client');
+    });
+
+    //show boss modal
+
+    $('.boss-slide').click(function() {
+       var boss_order = $(this).attr('data-boss');
+       $('html, body').css('overflow', 'hidden');
+       $('.boss'+boss_order+'-modal').addClass('boss-modal_show');
+    });
+
+    //show partners modal
+    $('.partner-slide').click(function() {
+       var part_order = $(this).attr('data-partner');
+        $('html, body').css('overflow', 'hidden');
+       $('.part'+part_order).addClass('part-modal_show');
+    });
+
+    //close modals
+
+    $('.close-modal').click(function() {
+        $('html, body').css('overflow', 'auto');
+       $('.boss-modal').removeClass('boss-modal_show');
+        $('.part-modal').removeClass('part-modal_show');
+    });
+
+
+
+
 
 });
