@@ -815,6 +815,8 @@ img {
 .corporate-page .corp-item .corp-bottom {
   height: 0;
   opacity: 0;
+  position: absolute;
+  z-index: -9999;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -889,6 +891,9 @@ img {
   height: auto;
   opacity: 1;
   padding-top: 24px;
+  -webkit-animation: zIndex 0.1s linear forwards;
+          animation: zIndex 0.1s linear forwards;
+  position: static;
 }
 
 .corporate-page .corp-bottom {
@@ -2131,6 +2136,376 @@ img {
   font-family: HR, Arial, sans-serif;
   font-size: 18px;
   color: white;
+}
+
+.green-page .green-block1 {
+  padding-top: 250px;
+  padding-bottom: 143px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+}
+
+.green-page .green-block1 .subtitle {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.green-page .green-block1 .desc {
+  font-family: HR, Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  line-height: 120%;
+  max-width: 631px;
+}
+
+.green-page .green-block1 .link {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  max-width: 342px;
+  height: 260px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.green-page .green-block1 .link a {
+  padding: 46px 0 40px 30px;
+  display: block;
+  position: relative;
+}
+
+.green-page .green-block1 .link a::before {
+  content: url("../img/icons/left_arrow.svg");
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.green-page .green-block1 .link a:hover::before {
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.green-page .green-block1 .link .title-link {
+  font-family: HB, Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.green-page .green-block1 .link .desc-link {
+  font-family: HR, Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  max-width: 217px;
+}
+
+.green-page .block1-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+
+.green-page .block1-top img {
+  max-width: 114px;
+  margin-right: 40px;
+}
+
+.green-page .block1-top .title {
+  font-family: HR, Arial, sans-serif;
+  font-size: 72px;
+  color: white;
+}
+
+.green-page .green-block2 {
+  background: #171717;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.green-page .green-block2::before {
+  position: absolute;
+  content: url("../img/green/right.png");
+  right: 0;
+  bottom: -70px;
+}
+
+.green-page .green-block2 .title {
+  font-family: HR, Arial, sans-serif;
+  font-size: 48px;
+  color: white;
+  max-width: 855px;
+  margin-bottom: 70px;
+}
+
+.green-page .green-block2 .desc {
+  font-family: HR, Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.green-page .green-block2 .big {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 144px;
+  font-weight: 500;
+}
+
+.green-page .green-block2 .small {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  max-width: 222px;
+}
+
+.green-page .corp-top, .green-page .corp-bottom {
+  padding-left: 0;
+}
+
+.green-page .page-subtitle_big {
+  margin-top: 0;
+}
+
+.green-page .corp-title {
+  max-width: 600px;
+}
+
+.green-page .corp-list {
+  margin-bottom: 90px;
+}
+
+.green-page .green-block4 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 70vh;
+}
+
+.green-page .green-block4 .title {
+  font-family: HR, Arial, sans-serif;
+  font-size: 48px;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.green-page .green-block4 .desc {
+  font-family: HR, Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  line-height: 130%;
+  max-width: 741px;
+  margin-bottom: 60px;
+}
+
+.green-page .green-block4 .download-btn {
+  width: 282px;
+  height: 70px;
+  display: block;
+  font-family: HB, Arial, sans-serif;
+  font-size: 18px;
+  color: #171717;
+  background: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.green-page .green-block5 {
+  background: #171717;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.green-page .green-block5 .titlle {
+  font-family: HR, Arial, sans-serif;
+  font-size: 48px;
+  margin-bottom: 80px;
+}
+
+.green-page .green-block5 .desc {
+  font-family: HR, Arial, sans-serif;
+  font-size: 36px;
+  margin-bottom: 50px;
+  max-width: 680px;
+}
+
+.green-page .green-block5 .slick-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+.green-page .green-block5 .slick-dots button {
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  margin: 0 5px;
+  cursor: pointer;
+  outline: none;
+  background: #FFFFFF;
+  opacity: 0.5;
+  font-size: 0;
+  border: none;
+  padding: 0;
+}
+
+.green-page .green-block5 .slick-dots .slick-active button {
+  width: 15px;
+  height: 15px;
+  background: white;
+  opacity: 1;
+}
+
+.green-page .green-block6 .title {
+  font-family: HR, Arial, sans-serif;
+  font-size: 48px;
+  color: #171717;
+  margin-bottom: 40px;
+}
+
+.green-page .green-block6 .desc {
+  font-family: HR, Arial, sans-serif;
+  font-size: 18px;
+  color: #575757;
+  line-height: 150%;
+  margin-bottom: 180px;
+  max-width: 650px;
+}
+
+.green-page .green-block6 img {
+  max-width: 290px;
+  margin-bottom: 25px;
+}
+
+.green-page .green-block6 .col-lg-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.green-page .green-block6 .col-lg-4 div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.green-page .green-block6 .role {
+  font-family: HB, Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  max-width: 213px;
+  margin-bottom: 35px;
+}
+
+.green-page .green-block6 .cont {
+  font-family: HR, Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  line-height: 150%;
+}
+
+.green-page .green-block6 .patent-slider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.green-page .green-block6 .patent-slider .slick-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+.green-page .green-block6 .patent-slider .slick-dots button {
+  padding: 0;
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #C5c5c5;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-size: 0;
+  border: none;
+}
+
+.green-page .green-block6 .patent-slider .slick-dots .slick-active button {
+  width: 15px;
+  height: 15px;
+  background: #194d92;
 }
 
 @media screen and (max-width: 1280px) {

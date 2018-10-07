@@ -679,6 +679,8 @@ img {
     .corp-bottom {
       height: 0;
       opacity: 0;
+      position: absolute;
+      z-index: -9999;
       transition: $anim;
     }
 
@@ -748,6 +750,8 @@ img {
       height: auto;
       opacity: 1;
       padding-top: 24px;
+      animation: zIndex 0.1s linear forwards;
+      position: static;
     }
   }
 
@@ -1817,6 +1821,323 @@ img {
       }
     }
   }
+}
+
+//green ecnomic page
+
+.green-page {
+  .green-block1 {
+    padding-top: 250px;
+    padding-bottom: 143px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .subtitle {
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 36px;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .desc {
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: white;
+      line-height: 120%;
+      max-width: 631px;
+
+    }
+
+    .link {
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 342px;
+      height: 260px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+
+      a {
+        padding: 46px 0 40px 30px;
+        display: block;
+        position: relative;
+
+        &::before {
+          content: url('../img/icons/left_arrow.svg');
+          position: absolute;
+          left: 30px;
+          bottom: 0;
+          transition: $anim;
+        }
+
+        &:hover {
+          &::before {
+            transform: translateX(10px);
+          }
+        }
+      }
+
+      .title-link {
+        font-family: HB, Arial, sans-serif;
+        font-size: 18px;
+        color: white;
+        margin-bottom: 30px;
+      }
+
+      .desc-link {
+        font-family: HR, Arial, sans-serif;
+        font-size: 14px;
+        color: white;
+        max-width: 217px;
+      }
+    }
+  }
+
+  .block1-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+
+    img {
+      max-width: 114px;
+      margin-right: 40px;
+    }
+
+    .title {
+      font-family: HR, Arial, sans-serif;
+      font-size: 72px;
+      color: white;
+    }
+  }
+
+  .green-block2 {
+    background: #171717;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    margin-bottom: 90px;
+
+    &::before {
+      position: absolute;
+      content: url('../img/green/right.png');
+      right: 0;
+      bottom: -70px;
+    }
+
+    .title {
+      font-family: HR, Arial, sans-serif;
+      font-size: 48px;
+      color: white;
+      max-width: 855px;
+      margin-bottom: 70px;
+    }
+
+    .desc {
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .big {
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 144px;
+      font-weight: 500;
+    }
+
+    .small {
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      max-width: 222px;
+    }
+  }
+
+  .corp-top, .corp-bottom {
+  padding-left: 0;
+  }
+
+  .page-subtitle_big {
+    margin-top: 0;
+  }
+
+  .corp-title {
+    max-width: 600px;
+  }
+
+  .corp-list {
+    margin-bottom: 90px;
+  }
+
+  .green-block4 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+
+    .title {
+      font-family: HR, Arial, sans-serif;
+      font-size: 48px;
+      color: white;
+      margin-bottom: 60px;
+    }
+
+    .desc {
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: white;
+      line-height: 130%;
+      max-width: 741px;
+      margin-bottom: 60px;
+    }
+
+    .download-btn {
+      width: 282px;
+      height: 70px;
+      display: block;
+      font-family: HB, Arial, sans-serif;
+      font-size: 18px;
+      color: #171717;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .green-block5 {
+    background: #171717;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    .titlle {
+      font-family: HR, Arial, sans-serif;
+      font-size: 48px;
+      margin-bottom: 80px;
+    }
+
+    .desc {
+      font-family: HR, Arial, sans-serif;
+      font-size: 36px;
+      margin-bottom: 50px;
+      max-width: 680px;
+    }
+
+    .slick-dots {
+      display: flex;
+      align-self: center;
+
+      button {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        transition: $anim;
+        margin: 0 5px;
+        cursor: pointer;
+        outline: none;
+        background: #FFFFFF;
+        opacity: 0.5;
+        font-size: 0;
+        border: none;
+        padding: 0;
+      }
+
+      .slick-active button {
+        width: 15px;
+        height: 15px;
+        background: white;
+        opacity: 1;
+      }
+    }
+  }
+
+  .green-block6 {
+    .title {
+      font-family: HR, Arial, sans-serif;
+      font-size: 48px;
+      color: #171717;
+      margin-bottom: 40px;
+    }
+
+    .desc {
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: #575757;
+      line-height: 150%;
+      margin-bottom: 180px;
+      max-width: 650px;
+    }
+
+    img {
+      max-width: 290px;
+      margin-bottom: 25px;
+    }
+
+    .col-lg-4 {
+      display: flex;
+      justify-content: flex-end;
+
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .role {
+      font-family: HB, Arial, sans-serif;
+      font-size: 18px;
+      color: black;
+      max-width: 213px;
+      margin-bottom: 35px;
+    }
+
+    .cont {
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: black;
+      line-height: 150%;
+    }
+
+    .patent-slider {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+
+      .slick-dots {
+        display: flex;
+        align-self: center;
+
+        button {
+          padding: 0;
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background: #C5c5c5;
+          cursor: pointer;
+          outline: none;
+          margin: 0 5px;
+          transition: $anim;
+          font-size: 0;
+          border: none;
+        }
+
+        .slick-active button {
+          width: 15px;
+          height: 15px;
+          background: #194d92;
+        }
+      }
+    }
+
+  }
+
 }
 
 //media quaries

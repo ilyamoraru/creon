@@ -48,6 +48,19 @@ $(document).ready(function() {
         slidesToShow: 1,
     });
 
+    $('.green-block5').slick({
+       arrows: false,
+       dots: true,
+       fade: true,
+    });
+
+    $('.patent-slider').slick({
+       arrows: false,
+       dots: true,
+       slidesToShow: 3,
+       slidesToScroll: 3,
+    });
+
    //header scroll
 
     //for desctop
