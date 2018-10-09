@@ -2264,7 +2264,8 @@ img {
 }
 
 .green-page .green-block1 .link .desc-link {
-  font-family: HR, Arial, sans-serif;
+  font-family: HL, Arial, sans-serif;
+  font-weight: 800;
   font-size: 14px;
   color: white;
   max-width: 217px;
@@ -2308,6 +2309,12 @@ img {
   right: 0;
   bottom: 280px;
   z-index: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  .green-page .green-block2::before {
+    bottom: 10px;
+  }
 }
 
 .green-page .green-block2 .title {
@@ -2503,6 +2510,7 @@ img {
   font-size: 24px;
   colo: white;
   margin-bottom: 25px;
+  max-width: 450px;
 }
 
 .green-page .green-block5 .block5-slide a {
@@ -2606,6 +2614,25 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 40px;
+}
+
+.green-page .green-block6 .patent-slider .slick-slide div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.green-page .green-block6 .patent-slider .slick-slide div img {
+  margin-right: 0;
 }
 
 .green-page .green-block6 .patent-slider .slick-dots {

@@ -1945,7 +1945,8 @@ img {
       }
 
       .desc-link {
-        font-family: HR, Arial, sans-serif;
+        font-family: HL, Arial, sans-serif;
+        font-weight: 800;
         font-size: 14px;
         color: white;
         max-width: 217px;
@@ -1984,6 +1985,10 @@ img {
       right: 0;
       bottom:280px;
       z-index: 2;
+
+      @media screen and (max-width: 1024px) {
+        bottom: 10px;
+      }
     }
 
     .title {
@@ -2158,6 +2163,7 @@ img {
         font-size: 24px;
         colo: white;
         margin-bottom: 25px;
+        max-width: 450px;
       }
 
       a {
@@ -2241,6 +2247,16 @@ img {
       display: flex;
       flex-direction: column;
       margin-bottom: 40px;
+
+      .slick-slide div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          margin-right: 0;
+        }
+      }
 
       .slick-dots {
         display: flex;
