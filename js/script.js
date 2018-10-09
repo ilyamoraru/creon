@@ -61,6 +61,13 @@ $(document).ready(function() {
        slidesToScroll: 3,
     });
 
+    $('.post-slider').slick({
+        arrows: true,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+
    //header scroll
 
     //for desctop
