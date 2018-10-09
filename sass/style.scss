@@ -2148,6 +2148,339 @@ img {
 
 }
 
+//blog
+
+.blog {
+  padding-top: 140px;
+
+  .post-type {
+    font-family: HR, Arial, sans-serif;
+    font-size-adjust: 16px;
+    color: black;
+    line-height: 100%;
+    margin-top: 40px;
+    margin-bottom: 23px;
+  }
+
+  .custom-flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-lg-4 {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .grey-bg {
+    background: #F2F2F2;
+  }
+
+  .blog-page1 .col-lg-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .post-name {
+    font-family: HR, Arial, sans-serif;
+    font-size: 24px;
+    color: black;
+    max-width: 80%;
+
+    @media screen and (max-width: 1280px) {
+      font-size: 20px;
+    }
+  }
+
+  .blog-page1 {
+    .post-name {
+      margin-bottom: 100px;
+    }
+  }
+
+
+  .title {
+    font-family: HR, Arial, sans-serif;
+    font-size: 64px;
+    color: #171717;
+    margin-bottom: 67px;
+  }
+
+  .news-nav {
+    display: flex;
+    font-family: HR, Arial, sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 71px;
+
+    p {
+      padding: 12px 26px;
+      cursor: pointer;
+    }
+
+    .this-item {
+      background: #F2F2F2;
+    }
+
+  }
+
+  .post-type_big {
+    font-family: HR, Arial, sans-serif;
+    font-size: 24px;
+    color: black;
+    list-style: 100%;
+    margin-bottom: 35px;
+
+
+  }
+
+  .post-name_big {
+    font-family: HR, Arial, sans-serif;
+    font-size: 36px;
+    color: black;
+    line-height: 140%;
+    max-width: 80%;
+
+    @media screen and (max-width: 1280px) {
+      max-width: 100%;
+    }
+  }
+
+  .blog-page2 {
+    padding-top: 100px;
+    padding-bottom: 145px;
+    margin-bottom: 135px;
+  }
+
+  .desc_bottom {
+    margin-top: 165px;
+    font-family: HR, Arial, sans-serif;
+    font-size: 18px;
+    color: black;
+    line-height: 30px;
+    margin-bottom: 75px;
+  }
+
+  .tittle_bottom {
+    font-family: HR, Arial, sans-serif;
+    font-size: 24px;
+    color: #171717;
+    line-height: 140%;
+    margin-bottom: 32px;
+  }
+
+  .bottom-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -6%;
+
+
+    .bottom-item {
+      max-width: 255px;
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: #a1a1a1;
+      line-height: 26px;
+      margin: 0 6%;
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 1024px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .right-dir {
+    margin-top: 165px;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      max-width: 286px;
+      margin-bottom: 45x;
+    }
+
+    .right-title {
+      font-family: HB, Arial, sans-serif;
+      font-size: 18px;
+      color: black;
+      margin-bottom: 12px;
+    }
+
+    .right-desc {
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: black;
+      display: block;
+    }
+  }
+
+  .blog-page3 .grey-bg {
+    padding: 70px;
+    display: flex;
+    margin-bottom: 90px;
+
+    .form-desc {
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: #000;
+      width: 40%;
+      margin-right: 100px;
+    }
+
+    .blog-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      input {
+        height: 60px;
+        background: none;
+        border: none;
+        font-family: HR, Arial, sans-serif;
+        font-size: 24px;
+        color: black;
+        outline: none;
+        border-bottom: 1px solid black;
+        margin-right: 84px;
+        width: 100%;
+
+        &::placeholder {
+          color: black;
+        }
+      }
+
+      .submit {
+        height: 80px;
+        background: #171717;
+        font-family: HB, Arial, sans-serif;
+        font-size: 18px;
+        color: white;
+        border: none;
+        padding: 0 55px;
+        cursor: pointer;
+        outline: none;
+        opacity: 1;
+
+        @media screen and (max-width: 1024px) {
+          padding: 0 20px;
+        }
+
+        &:disabled {
+          opacity: 0.4;
+          cursor: auto;
+        }
+      }
+
+      #check {
+        display: none;
+      }
+
+      label {
+        margin-top: 30px;
+        font-family: HR, Arial, sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        color: black;
+        padding-left: 50px;
+        position: relative;
+        max-width: 475px;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          border: 1px solid black;
+          left: 0;
+          top: 5px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 5px;
+          box-sizing: border-box;
+        }
+
+
+        p{
+          opacity: 0.3;
+          display: inline;
+        }
+
+        a {
+          color: black;
+          opacity: 0.5;
+          display: inline;
+        }
+      }
+
+      #check:checked + label {
+        &::before {
+          content: url('../img/icons/check.svg');
+        }
+      }
+    }
+  }
+
+  .breadcrumbs {
+    display: flex;
+    margin: 0 -3.5px;
+    margin-bottom: 125px;
+
+    .bread-item {
+      cursor: pointer;
+      width: 72px;
+      height: 72px;
+      background: rgba(94, 94, 94, 0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: black;
+      transition: $anim;
+      margin: 0 3.5px;
+
+      p,a  {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+
+        img {
+          max-width: 35px;
+        }
+      }
+    }
+
+    .this-bread {
+      color: white;
+      background: #194D92;
+
+      p,a  {
+        color: white;
+      }
+    }
+
+    .last-bread {
+      margin-left: 35px - 3.5px;
+    }
+  }
+}
+
 //media quaries
 
 @media screen and (max-width: 1280px) {

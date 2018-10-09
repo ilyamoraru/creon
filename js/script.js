@@ -174,6 +174,16 @@ $(document).ready(function() {
         $('.part-modal').removeClass('part-modal_show');
     });
 
+    window.addEventListener("keydown", function(evt) {
+        if(evt.keyCode === 27) {
+            evt.preventDefault();
+
+            $('.boss-modal').removeClass('boss-modal_show');
+            $('.part-modal').removeClass('part-modal_show');
+            $('html, body').css('overflow','auto');
+        };
+    });
+
     //contacts toogle maps
 
     $('.contacts-item').click(function() {
@@ -185,6 +195,19 @@ $(document).ready(function() {
        $('#cont'+number_map+'-map').css('display', 'block');
     });
 
+    //validation in blog
+
+    $('#check').click(function() {
+        if($('#check').attr('checked')) {
+            $('#check').removeAttr('checked');
+            $('.submit').attr('disabled','true');
+            console.log('off')
+        } else {
+            $('#check').attr('checked','true');
+            $('.submit').removeAttr('disabled');
+            console.log('on')
+        }
+    });
 
 
 });
