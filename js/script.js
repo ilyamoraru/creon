@@ -3,14 +3,6 @@ $(document).ready(function() {
 
     //main slider
 
-    $('.main-slider').slick({
-        arrows: false,
-        dots: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-    });
-
     $('.about-slider_date').slick({
         arrows: true,
         dots: false,
@@ -51,7 +43,8 @@ $(document).ready(function() {
     $('.green-block5').slick({
        arrows: false,
        dots: true,
-       fade: true,
+       fade: false,
+        slidesToShow: 2,
     });
 
     $('.patent-slider').slick({
@@ -229,5 +222,15 @@ $(document).ready(function() {
         }
     });
 
+    //переключение на старнице блог
+
+    $('.blog .nav-item').click(function() {
+        $('.blog .nav-item').removeClass('this-item');
+        $(this).addClass('this-item');
+
+        var number = $(this).attr('data-news');
+        $('.block-news').removeClass('block-news_show');
+        $('.block-news'+number).addClass('block-news_show');
+    });
 
 });

@@ -22,6 +22,7 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
 </head>
 <body>
 <header class="header container-fluid">
@@ -77,7 +78,7 @@
             <div class="col-lg-4 green-link" style="background-image: url('img/main/green.png')">
                 <a href="green.html">
                     <h3 class="subtitle-link">
-                        Зелёная экономика
+                        Зеленая экономика
                     </h3>
                     <p class="desc-link">
                         Фокусируем внимание нефтегазовых компаний страны и мира на природоохранной деятельности.
@@ -282,5 +283,16 @@
      </div>
  </footer>
 <script src="js/script.js"></script>
+<script>
+    $(document).ready(function() {
+        $.scrollify({
+            section: '.main-slide',
+            interstitialSection: '.footer',
+            scrollSpeed: 1000,
+            scrollbars: false,
+            easing: "linear",
+        })
+    });
+</script>
 </body>
 </html>

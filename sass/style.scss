@@ -515,6 +515,12 @@ img {
       max-width: 171px;
       display: block;
       margin-bottom: 25px;
+      transition: $anim;
+
+      &:hover {
+        color: white;
+        opacity: 0.9;
+      }
     }
   }
 
@@ -528,6 +534,22 @@ img {
       color: #797979;
       line-height: 22px;
       max-width: 125px;
+      transition: $anim;
+    }
+
+    img {
+      opacity: 0.8;
+    }
+
+    &:hover {
+      p {
+        color: white;
+        opacity: 0.9;
+      }
+
+      img {
+        opacity: 1;
+      }
     }
   }
 
@@ -543,6 +565,12 @@ img {
     white-space: nowrap;
     margin-bottom: 20px;
     display: block;
+    transition: $anim;
+
+    &:hover {
+      color: white;
+      opacity: 0.9;
+    }
   }
 
   .social-links {
@@ -552,6 +580,12 @@ img {
       color: #797979;
       font-size: 22px;
       margin: 0 10px;
+      transition: $anim;
+
+      &:hover {
+        color: white;
+        opacity: 0.9;
+      }
     }
   }
 
@@ -581,6 +615,7 @@ img {
     img {
       max-width: 82px;
       margin-left: 8px;
+      padding-top: 3px;
     }
   }
 
@@ -1939,7 +1974,7 @@ img {
     background: #171717;
     color: white;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 160px;
     position: relative;
     margin-bottom: 90px;
 
@@ -1947,7 +1982,8 @@ img {
       position: absolute;
       content: url('../img/green/right.png');
       right: 0;
-      bottom: -70px;
+      bottom:280px;
+      z-index: 2;
     }
 
     .title {
@@ -1966,15 +2002,15 @@ img {
     }
 
     .big {
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 144px;
-      font-weight: 500;
+      font-family: HB, Arial, sans-serif;
+      font-size: 48px;
+      margin-bottom: 40px;
     }
 
     .small {
       font-family: Roboto, Arial, sans-serif;
       font-size: 16px;
-      max-width: 222px;
+
     }
   }
 
@@ -1999,7 +2035,6 @@ img {
     padding-bottom: 60px;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
 
     .title {
       font-family: HR, Arial, sans-serif;
@@ -2028,6 +2063,33 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    ul {
+      margin-bottom: 35px;
+    }
+
+    li {
+      font-family: HR, Arial, sans-serif;
+      font-size: 18px;
+      color: white;
+      line-height: 130%;
+      max-width: 650px;
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 15px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: white;
+        left: 0;
+        top: 10px;
+      }
+
     }
   }
 
@@ -2079,9 +2141,50 @@ img {
         opacity: 1;
       }
     }
+
+
+
+    .block5-slide {
+      .date {
+        font-family: HR, Arial, sans-serif;
+        font-size: 18px;
+        color: white;
+        opacity: 0.5;
+        margin-bottom: 15px;
+      }
+
+      .desc {
+        font-family: HR, Arial, sans-serif;
+        font-size: 24px;
+        colo: white;
+        margin-bottom: 25px;
+      }
+
+      a {
+        font-family: HeB, Arial, sans-serif;
+        font-size: 18px;
+        color: white;
+        text-decoration: underline;
+        margin-bottom: 75px;
+        display: block;
+      }
+    }
   }
 
   .green-block6 {
+    .custom-padding {
+      padding-left: 7%;
+      padding-right: 7%;
+
+      .inner-wrap {
+        display: flex;
+      }
+
+      img {
+        margin-right: 110px;
+      }
+    }
+
     .title {
       font-family: HR, Arial, sans-serif;
       font-size: 48px;
@@ -2114,18 +2217,24 @@ img {
     }
 
     .role {
-      font-family: HeB, Arial, sans-serif;
-      font-size: 18px;
+      font-family: HR, Arial, sans-serif;
+      font-size: 28px;
       color: black;
-      max-width: 213px;
+      margin-bottom: 35px;
+      line-height: 150%;
+    }
+
+    .name {
+      font-family: HeB, Arial, sans-serif;
+      font-size: 28px;
+      color: black;
       margin-bottom: 35px;
     }
 
     .cont {
       font-family: HR, Arial, sans-serif;
-      font-size: 18px;
+      font-size: 28px;
       color: black;
-      line-height: 150%;
     }
 
     .patent-slider {
@@ -2493,6 +2602,14 @@ img {
     .last-bread {
       margin-left: 35px - 3.5px;
     }
+  }
+
+  .block-news {
+    display: none;
+  }
+
+  .block-news_show {
+    display: flex;
   }
 }
 
