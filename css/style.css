@@ -3214,6 +3214,36 @@ img {
   content: url("../img/icons/left_arrow.svg");
 }
 
+.post-page .post-slider-wrap {
+  position: relative;
+}
+
+.post-page .post-slider-wrap .slider-counter {
+  width: 88px;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: HR, Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: -webkit-calc(100% - 50% - 44px);
+  left: calc(100% - 50% - 44px);
+  background: rgba(0, 0, 0, 0.6);
+}
+
 @media screen and (max-width: 1280px) {
   .about-page .partners-slider .partner-slide .inner-slide .name, .about-page .partners-slider .partner-slide .inner-slide .position {
     font-size: 14px;

@@ -2731,6 +2731,26 @@ img {
       }
     }
   }
+
+  .post-slider-wrap {
+    position: relative;
+
+    .slider-counter {
+      width: 88px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: HR, Arial, sans-serif;
+      font-size: 16px;
+      color: white;
+      position: absolute;
+      bottom: 20px;
+      left: calc(100% - 50% - 44px);
+      background: rgba(0,0,0,0.6);
+    }
+  }
 }
 
 //media quaries

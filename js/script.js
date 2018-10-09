@@ -66,6 +66,19 @@ $(document).ready(function() {
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        infinite: false,
+    });
+
+    //считаем слайды
+
+    var number_slides = $('.post-slider img').length;
+    $('.count2').text('0'+number_slides);
+
+    //текущий слайд
+
+    $('.post-slider').on('afterChange', function(event, slick,currentSlide) {
+       var number_slide = currentSlide + 1;
+       $('.count1').text('0'+number_slide);
     });
 
    //header scroll
