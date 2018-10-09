@@ -1,23 +1,23 @@
 @charset "UTF-8";
 @font-face {
   font-family: HL;
-  src: url("../fonts/HL.otf");
+  src: url("../fonts/HL.otf"), url("../fonts/HL.eot"), url("../fonts/HL.woff");
 }
 
 @font-face {
   font-family: HR;
   font-weight: 100;
-  src: url("../fonts/HR.otf");
+  src: url("../fonts/HR.otf"), url("../fonts/HR.eot"), url("../fonts/HR.woff");
 }
 
 @font-face {
-  font-family: HB;
-  src: url("../fonts/HB.ttf");
+  font-family: HeB;
+  src: url("../fonts/HB.ttf"), url("../fonts/HB.eot"), url("../fonts/HB.otf"), url("../fonts/HB.woff");
 }
 
 @font-face {
   font-family: GPR;
-  src: url("../fonts/GothamPro.ttf");
+  src: url("../fonts/GothamPro.ttf"), url("../fonts/GothamPro.eot"), url("../fonts/GothamPro.otf"), url("../fonts/GothamPro.woff");
 }
 
 body {
@@ -135,6 +135,7 @@ img {
 @media screen and (max-width: 1280px) {
   .header .header-nav_list a {
     padding-left: 20px;
+    font-size: 16px;
   }
 }
 
@@ -175,7 +176,7 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: white;
   cursor: pointer;
@@ -272,7 +273,7 @@ img {
 }
 
 .main-slider .second-count {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 28px;
   opacity: 0.5;
   letter-spacing: 2px;
@@ -295,7 +296,7 @@ img {
 }
 
 .main-slider .count-name {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: white;
   max-width: 170px;
@@ -445,7 +446,7 @@ img {
 }
 
 .main-slider .main-block1 .subtitle-link {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: white;
@@ -602,7 +603,7 @@ img {
 }
 
 .footer .footer-item p {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: white;
   margin-bottom: 41px;
@@ -716,7 +717,7 @@ img {
 }
 
 .page-subitle {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: white;
   margin-bottom: 42px;
@@ -955,7 +956,7 @@ img {
 
 .corporate-page .corp-cont h3 {
   max-width: 168px;
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: white;
 }
@@ -1129,12 +1130,18 @@ img {
   margin-right: 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .about-page .about-cont {
+    max-width: 250px;
+  }
+}
+
 .about-page .about-cont img {
   margin-bottom: 45px;
 }
 
 .about-page .about-cont .boss-name {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   color: black;
   font-size: 18px;
   margin-bottom: 18px;
@@ -1429,7 +1436,7 @@ img {
 }
 
 .about-page .boss-slide .inner-slide .name {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
   color: white;
@@ -1509,7 +1516,7 @@ img {
 }
 
 .about-page .partners-slider .partner-slide .inner-slide .name {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
   color: white;
@@ -1883,7 +1890,7 @@ img {
 }
 
 .contacts-page .contacts-item .inner-name {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: #171717;
   margin-bottom: 20px;
@@ -2127,7 +2134,7 @@ img {
 }
 
 .structure-page .partners-slider .partner-slide .inner-slide .name {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
   color: white;
@@ -2209,7 +2216,7 @@ img {
 }
 
 .green-page .green-block1 .link .title-link {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: white;
   margin-bottom: 30px;
@@ -2333,7 +2340,7 @@ img {
   width: 282px;
   height: 70px;
   display: block;
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: #171717;
   background: white;
@@ -2461,7 +2468,7 @@ img {
 }
 
 .green-page .green-block6 .role {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: black;
   max-width: 213px;
@@ -2696,7 +2703,7 @@ img {
 }
 
 .blog .right-dir .right-title {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: black;
   margin-bottom: 12px;
@@ -2789,7 +2796,7 @@ img {
 .blog .blog-page3 .grey-bg .blog-form .submit {
   height: 80px;
   background: #171717;
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: white;
   border: none;
@@ -2976,7 +2983,7 @@ img {
 }
 
 .post-page .date {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: white;
   margin-bottom: 20px;
@@ -3048,7 +3055,7 @@ img {
 }
 
 .post-page .post-cont .link h3 {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 14px;
   color: white;
 }

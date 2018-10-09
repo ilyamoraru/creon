@@ -2,23 +2,33 @@ $anim: all 0.2s linear;
 
 @font-face {
   font-family: HL;
-  src: url('../fonts/HL.otf');
+  src: url('../fonts/HL.otf'),
+  url('../fonts/HL.eot'),
+  url('../fonts/HL.woff');
 }
 
 @font-face {
   font-family: HR;
   font-weight: 100;
-  src: url('../fonts/HR.otf');
+  src: url('../fonts/HR.otf'),
+  url('../fonts/HR.eot'),
+  url('../fonts/HR.woff');
 }
 
 @font-face {
-  font-family: HB;
-  src: url('../fonts/HB.ttf')
+  font-family: HeB;
+  src: url('../fonts/HB.ttf'),
+      url('../fonts/HB.eot'),
+      url('../fonts/HB.otf'),
+      url('../fonts/HB.woff');
 }
 
 @font-face {
   font-family: GPR;
-  src: url('../fonts/GothamPro.ttf');
+  src: url('../fonts/GothamPro.ttf'),
+  url('../fonts/GothamPro.eot'),
+  url('../fonts/GothamPro.otf'),
+  url('../fonts/GothamPro.woff');
 }
 
 //base stilization
@@ -111,6 +121,7 @@ img {
 
       @media screen and (max-width: 1280px) {
         padding-left: 20px;
+        font-size: 16px;
       }
 
       @media screen and (max-width: 1024px) {
@@ -137,7 +148,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: HB, Arial, sans-serif;
+    font-family: HeB, Arial, sans-serif;
     font-size: 18px;
     color: white;
     cursor: pointer;
@@ -219,7 +230,7 @@ img {
   }
 
   .second-count {
-    font-family: HB, Arial, sans-serif;
+    font-family: HeB, Arial, sans-serif;
     font-size: 28px;
     opacity: 0.5;
     letter-spacing: 2px;
@@ -242,7 +253,7 @@ img {
   }
 
   .count-name {
-    font-family: HB, Arial, sans-serif;
+    font-family: HeB, Arial, sans-serif;
     font-size: 18px;
     color: white;
     max-width: 170px;
@@ -345,7 +356,7 @@ img {
     }
 
     .subtitle-link {
-      font-family: HB, Arial, sans-serif;
+      font-family: HeB, Arial, sans-serif;
       font-size: 18px;
       line-height: 24px;
       color: white;
@@ -490,7 +501,7 @@ img {
 
   .footer-item {
     p {
-      font-family: HB, Arial, sans-serif;
+      font-family: HeB, Arial, sans-serif;
       font-size: 18px;
       color: white;
       margin-bottom: 41px;
@@ -581,7 +592,7 @@ img {
 //corporate
 
 .page-subitle {
-  font-family: HB, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 18px;
   color: white;
   margin-bottom: 42px;
@@ -806,7 +817,7 @@ img {
 
     h3 {
       max-width: 168px;
-      font-family: HB, Arial, sans-serif;
+      font-family: HeB, Arial, sans-serif;
       font-size: 18px;
       color: white;
     }
@@ -973,13 +984,17 @@ img {
     padding-right: 0;
     margin-right: 0;
 
+    @media screen and (max-width: 1280px) {
+      max-width: 250px;
+    }
+
     img {
       margin-bottom: 45px;
 
     }
 
       .boss-name {
-        font-family: HB, Arial, sans-serif;
+        font-family: HeB, Arial, sans-serif;
         color: black;
         font-size: 18px;
         margin-bottom: 18px;
@@ -1219,7 +1234,7 @@ img {
       }
 
       .name {
-        font-family: HB, Arial, sans-serif;
+        font-family: HeB, Arial, sans-serif;
         font-size: 18px;
         margin-bottom: 10px;
         color: white;
@@ -1279,7 +1294,7 @@ img {
         }
 
         .name {
-          font-family: HB, Arial, sans-serif;
+          font-family: HeB, Arial, sans-serif;
           font-size: 18px;
           margin-bottom: 10px;
           color: white;
@@ -1611,7 +1626,7 @@ img {
     }
 
     .inner-name {
-      font-family: HB, Arial, sans-serif;
+      font-family: HeB, Arial, sans-serif;
       font-size: 18px;
       color: #171717;
       margin-bottom: 20px;
@@ -1806,7 +1821,7 @@ img {
         }
 
         .name {
-          font-family: HB, Arial, sans-serif;
+          font-family: HeB, Arial, sans-serif;
           font-size: 18px;
           margin-bottom: 10px;
           color: white;
@@ -1888,7 +1903,7 @@ img {
       }
 
       .title-link {
-        font-family: HB, Arial, sans-serif;
+        font-family: HeB, Arial, sans-serif;
         font-size: 18px;
         color: white;
         margin-bottom: 30px;
@@ -2006,7 +2021,7 @@ img {
       width: 282px;
       height: 70px;
       display: block;
-      font-family: HB, Arial, sans-serif;
+      font-family: HeB, Arial, sans-serif;
       font-size: 18px;
       color: #171717;
       background: white;
@@ -2099,7 +2114,7 @@ img {
     }
 
     .role {
-      font-family: HB, Arial, sans-serif;
+      font-family: HeB, Arial, sans-serif;
       font-size: 18px;
       color: black;
       max-width: 213px;
@@ -2305,7 +2320,7 @@ img {
     }
 
     .right-title {
-      font-family: HB, Arial, sans-serif;
+      font-family: HeB, Arial, sans-serif;
       font-size: 18px;
       color: black;
       margin-bottom: 12px;
@@ -2362,7 +2377,7 @@ img {
       .submit {
         height: 80px;
         background: #171717;
-        font-family: HB, Arial, sans-serif;
+        font-family: HeB, Arial, sans-serif;
         font-size: 18px;
         color: white;
         border: none;
@@ -2523,7 +2538,7 @@ img {
   }
 
   .date {
-    font-family: HB, Arial, sans-serif;
+    font-family: HeB, Arial, sans-serif;
     font-size: 18px;
     color: white;
     margin-bottom: 20px;
@@ -2583,7 +2598,7 @@ img {
       }
 
       h3 {
-        font-family: HB, Arial, sans-serif;
+        font-family: HeB, Arial, sans-serif;
         font-size: 14px;
         color: white;
       }
