@@ -612,10 +612,21 @@ img {
     justify-content: flex-end;
     margin-top: 62px;
 
-    img {
+    .serenity {
       max-width: 82px;
       margin-left: 8px;
-      padding-top: 3px;
+      padding-top: 1px;
+      transition: $anim;
+
+      path {
+        transition: $anim;
+      }
+    }
+
+    &:hover {
+      path {
+        fill: white!important;
+      }
     }
   }
 
@@ -675,7 +686,7 @@ img {
     padding-top: 187px;
     padding-bottom: 70px;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: 50% 50%;
     margin-bottom: 80px;
 

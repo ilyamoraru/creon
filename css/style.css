@@ -744,10 +744,23 @@ img {
   margin-top: 62px;
 }
 
-.footer .developer img {
+.footer .developer .serenity {
   max-width: 82px;
   margin-left: 8px;
-  padding-top: 3px;
+  padding-top: 1px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.footer .developer .serenity path {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.footer .developer:hover path {
+  fill: white !important;
 }
 
 .footer .flex-custom {
@@ -804,8 +817,8 @@ img {
   padding-top: 187px;
   padding-bottom: 70px;
   background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100% 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: 50% 50%;
   margin-bottom: 80px;
 }
