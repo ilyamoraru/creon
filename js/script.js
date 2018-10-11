@@ -219,8 +219,9 @@ $(document).ready(function() {
 
     $('.contacts-item').click(function() {
        $('.contacts-item').removeClass('open-item_cont');
+        $('.contacts-item').removeClass('order-100');
        $(this).addClass('open-item_cont');
-
+        $(this).addClass('order-100');
        var number_map = $(this).attr('data-address');
        $('.map').css('display', 'none');
        $('#cont'+number_map+'-map').css('display', 'block');

@@ -1881,6 +1881,13 @@ img {
   min-height: 100vh;
   position: relative;
   padding-top: 140px;
+  overflow: hidden;
+
+
+  @media screen and (max-width: 1000px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   .title {
     font-family: HR, Arial, sans-serif;
@@ -1889,6 +1896,10 @@ img {
     z-index: 10;
     position: relative;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1000px) {
+      padding-left: 60px;
+    }
   }
 
   .map {
@@ -1903,6 +1914,10 @@ img {
     position: relative;
     z-index: 10;
     margin-bottom: 92px;
+
+    @media screen and (max-width: 1000px) {
+      margin-bottom: 0;
+    }
   }
 
   .contacts-item {
@@ -1987,6 +2002,15 @@ img {
       position: static;
       animation: zIndex 0.1s linear forwards;
     }
+  }
+
+  .contacts-list {
+  display: flex;
+    flex-direction: column;
+  }
+
+  .order-100 {
+    order: 100;
   }
 
   .map {

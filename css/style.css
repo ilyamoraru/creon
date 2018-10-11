@@ -2228,6 +2228,14 @@ img {
   min-height: 100vh;
   position: relative;
   padding-top: 140px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts-page {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .contacts-page .title {
@@ -2237,6 +2245,12 @@ img {
   z-index: 10;
   position: relative;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts-page .title {
+    padding-left: 60px;
+  }
 }
 
 .contacts-page .map {
@@ -2251,6 +2265,12 @@ img {
   position: relative;
   z-index: 10;
   margin-bottom: 92px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts-page .contacts-list {
+    margin-bottom: 0;
+  }
 }
 
 .contacts-page .contacts-item {
@@ -2344,6 +2364,25 @@ img {
   position: static;
   -webkit-animation: zIndex 0.1s linear forwards;
           animation: zIndex 0.1s linear forwards;
+}
+
+.contacts-page .contacts-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts-page .order-100 {
+  -webkit-box-ordinal-group: 101;
+  -webkit-order: 100;
+      -ms-flex-order: 100;
+          order: 100;
 }
 
 .contacts-page .map {
