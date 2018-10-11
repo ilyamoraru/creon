@@ -1,5 +1,7 @@
 $anim: all 0.2s linear;
 
+
+
 @font-face {
   font-family: HL;
   src: url('../fonts/HL.otf'),
@@ -74,7 +76,44 @@ img {
 .container-fluid {
   padding-left: 8%;
   padding-right: 8%;
+
+  @media screen and (max-width: 1300px) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }
+
+.d-none {
+  @media screen and (min-width: 0px) {
+    display: none!important;
+  }
+}
+
+.d-block {
+  @media screen and (min-width: 0px) {
+    display: block!important;
+  }
+}
+
+.d-xl-none {
+  @media screen and (min-width: 1300px) {
+    display: none!important;
+  }
+}
+
+.d-xl-block {
+  @media screen and (min-width: 1300px) {
+    display: block!important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .col-xl-9 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
 
 //header
 
@@ -91,7 +130,7 @@ img {
     margin: 0;
   }
 
-  .col-lg-2 {
+  .col-2 {
     padding-left: 0;
 
     img {
@@ -99,7 +138,7 @@ img {
     }
   }
 
-  .col-lg-1 {
+  .col-1 {
     padding-right: 0;
     display: flex;
     justify-content: flex-end;
@@ -266,7 +305,7 @@ img {
   .left-anim {
     display: flex;
     flex-direction: column;
-    margin-top: -160px;
+    margin-top: -95px;
     opacity: 1;
     transition: $anim;
   }
@@ -349,7 +388,7 @@ img {
       }
     }
 
-    .col-lg-2, .col-lg-3 {
+    .col-xl-2, .col-xl-3 {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -681,6 +720,7 @@ img {
 }
 
 .corporate-page {
+  overflow: hidden;
 
   .corporate-block1 {
     padding-top: 187px;
@@ -704,6 +744,10 @@ img {
     background: #F2F2F2;
     margin: 68px 0;
     padding: 58px;
+
+    @media screen and (max-width: 1300px) {
+      padding: 36px 40px;
+    }
   }
 
   .page-subtitle_big {
@@ -861,11 +905,27 @@ img {
     right: 0;
     top: 0;
 
+    @media screen and (max-width: 1300px) {
+      position: relative;
+      display: flex;
+      width: calc(100% + 120px);
+      margin: 0 -60px;
+      margin-top: 40px;
+
+      .link {
+        width: 50%;
+      }
+    }
+
     h3 {
       max-width: 168px;
       font-family: HeB, Arial, sans-serif;
       font-size: 18px;
       color: white;
+
+      @media screen and (max-width: 1300px) {
+        align-self: flex-end;
+      }
     }
 
     img {
@@ -887,19 +947,48 @@ img {
       width: 342px;
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: 50% 50%;
 
-      @media screen and (max-width: 1280px) {
-        width: 250px;
-        height: 250px;
+      @media screen and (max-width: 1300px) {
+        width: 50%;
+        height: 174px;
+
+        img {
+          align-self: flex-start;
+        }
       }
 
       &:hover {
         img {
           transform: translateX(10px);
         }
+
+
       }
     }
 
+    .link2 {
+
+        @media screen and (max-width: 1300px) {
+          h3 {
+         align-self: flex-start;
+        }
+
+          img {
+            align-self: flex-end;
+          }
+      }
+    }
+
+  }
+
+  .img-cont {
+    @media screen and (max-width: 1300px) {
+      img {
+        width: calc(100% + 120px);
+        margin-left: -60px;
+      }
+    }
   }
 
 }
@@ -907,6 +996,9 @@ img {
 //corporate page
 
 .strategy-page {
+
+
+
   .corp2-list {
     display: flex;
     flex-wrap: wrap;
@@ -2928,6 +3020,135 @@ img {
 }
 
 //media quaries
+
+@media screen and (max-width: 1100px) {
+  .main-slider .main-block1 .title {
+    font-size: 116px;
+  }
+
+  .main-slider .main-slide {
+    background-size: 150% 120%;
+  }
+
+  .main-slider .main-slide {
+    padding-top: 27vh;
+  }
+
+  .main-slider .main-block1 {
+    padding-top: 22vh;
+    padding-bottom: 315px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .main-slider .main-block1 .col-xl-2, .main-slider .main-block1 .col-xl-3 {
+    justify-content: flex-start;
+  }
+
+  .header {
+    height: 51px;
+  }
+
+  .header .language-header {
+    width: 51px;
+    height: 51px;
+
+    &:hover {
+      height: 102px;
+    }
+  }
+
+  .main-slider .main-block1 .title {
+    font-size: 95px;
+  }
+
+  .main-slider .left-anim {
+    margin-top: -95px;
+  }
+
+  .main-slider .main-slide {
+    padding-left: 12%;
+  }
+
+  .main-slider .promo-desc {
+    max-width: 100%;
+    padding-top: 150px;
+  }
+
+  .main-slider .promo-open {
+    top: auto;
+    bottom: -50px;
+  }
+
+  .main-slider .left-anim_open, .main-slider .center-anim_show {
+    opacity: 1;
+    transform: none;
+  }
+
+  .main-slider .promo-open_show {
+    left: 0;
+  }
+
+  .main-slider .center-anim {
+    padding-left: 20%;
+  }
+
+  .header .col-2 img {
+    max-width: 130px;
+  }
+
+  .footer .footer-item p {
+    margin-bottom: 25px;
+  }
+
+  .footer .footer-item a {
+    margin-bottom: 15px;
+  }
+
+  .footer .col-sm-4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .row {
+    position: relative;
+  }
+
+  .footer .mob-abs {
+    position: absolute;
+    top: 150px;
+    right: 58px;
+  }
+
+  .footer .tab-o-1 {
+    padding-right: 28px;
+  }
+
+  .tab-0-0 {
+    order: 0;
+  }
+
+  .tab-o-1 {
+    order: 1;
+  }
+
+  .tab-o-2 {
+    order: 2;
+  }
+
+  .footer .tab-left {
+    justify-content: flex-start;
+  }
+
+  .footer .social-links a {
+    font-size: 35px;
+  }
+
+  .footer .align-items-end {
+    align-items: center!important;
+  }
+
+}
 
 @media screen and (max-width: 1280px) {
   .about-page .partners-slider .partner-slide .inner-slide .name, .about-page .partners-slider .partner-slide .inner-slide .position {
