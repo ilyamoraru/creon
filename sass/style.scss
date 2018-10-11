@@ -650,6 +650,7 @@ img {
     align-items: center;
     justify-content: flex-end;
     margin-top: 62px;
+    white-space: nowrap;
 
     .serenity {
       max-width: 82px;
@@ -698,6 +699,10 @@ img {
   font-family: HR, Arial, sans-serif;
   font-size: 64px;
   line-height: 120%;
+
+  @media screen and (max-width: 1300px) {
+    font-size: 48px;
+  }
 }
 
 .page-content {
@@ -967,6 +972,17 @@ img {
       }
     }
 
+    .link1 {
+      @media screen and (max-width: 1300px) {
+        &:hover {
+
+          img {
+            transform: translateX(-10px);
+          }
+        }
+      }
+    }
+
     .link2 {
 
         @media screen and (max-width: 1300px) {
@@ -993,11 +1009,9 @@ img {
 
 }
 
-//corporate page
+//strategy page
 
 .strategy-page {
-
-
 
   .corp2-list {
     display: flex;
@@ -1005,12 +1019,49 @@ img {
     margin: 0 -2.4%;
     margin-top: 60px;
 
+    @media screen and (max-width: 1300px) {
+      flex-direction: column;
+
+    }
+
+    .slick-dots {
+      display: flex;
+      align-self: center;
+      margin-bottom: 60px;
+
+      button {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #C5c5c5;
+        cursor: pointer;
+        outline: none;
+        font-size: 0;
+        border: none;
+        padding: 0;
+        margin: 0 5px;
+      }
+
+      .slick-active {
+        button {
+          width: 15px;
+          height: 15px;
+          background: #194D92;
+        }
+      }
+    }
   }
 
   .corp2-item {
     margin: 0 2.4%;
     width: 11%;
     margin-bottom: 53px;
+
+    @media screen and (max-width: 1300px) {
+      display: flex!important;
+      flex-direction: column;
+      align-items: center;
+    }
 
     img {
       max-width: 71px;
@@ -1022,50 +1073,100 @@ img {
       font-size: 12px;
       color: #575757;
       max-width: 107px;
+
+      @media screen and (max-width: 1300px) {
+        font-size: 16px;
+        max-width: 150px;
+      }
     }
 
     .corp21 {
       max-width: 71.35px;
-    }
+
+        @media screen and (max-width: 1300px) {
+          max-width: 100px;
+        }
+      }
+
 
     .corp22 {
       max-width: 29.19px;
+
+      @media screen and (max-width: 1300px) {
+        max-width: 50px;
+      }
     }
 
     .corp23 {
       max-width: 42.07px;
+
+      @media screen and (max-width: 1300px) {
+        max-width: 70px;
+      }
     }
 
     .corp24 {
       max-width: 51px;
+
+      @media screen and (max-width: 1300px) {
+        max-width: 80px;
+      }
     }
 
     .corp25 {
       max-width: 55px;
+
+      @media screen and (max-width: 1300px) {
+        max-width: 80px;
+      }
     }
 
     .corp26 {
       max-width: 47px;
+
+      @media screen and (max-width: 1300px) {
+        max-width: 77px;
+      }
     }
 
     .corp27 {
       max-width: 80px;
+
+      @media screen and (max-width: 1300px) {
+        max-width: 110px;
+      }
     }
 
     .corp28 {
       max-width: 69.6px;
+
+      @media screen and (max-width: 1300px) {
+        max-width: 90px;
+      }
     }
 
     .corp29 {
       max-width: 41px;
+
+      @media screen and (max-width: 1300px) {
+        max-width: 70px;
+      }
     }
 
     .corp210 {
       max-width: 25.45px;
+
+      @media screen and (max-width: 1300px) {
+        max-width: 55px;
+      }
     }
 
     .corp211 {
       max-width: 57px;
+
+      @media screen and (max-width: 1300px) {
+        max-width: 87px;
+      }
     }
   }
 
@@ -1103,7 +1204,7 @@ img {
 
   .page-title {
     color: white;
-    max-width: 800px;
+    max-width: 450px;
   }
 
   .about-block1 {
@@ -1227,12 +1328,21 @@ img {
       }
     }
 
-    .dots-cont {
-      display: flex;
+    .dots-wrap {
       position: absolute;
-      width: 100%;
       top: 269px;
       z-index: 2;
+      width: 100%;
+    }
+
+    .dots-cont {
+      display: flex;
+      width: 100%;
+
+      @media screen and (max-width: 900px) {
+        overflow-y: hidden;
+        overflow-x: scroll;
+      }
 
 
       button {
@@ -1247,8 +1357,13 @@ img {
         margin: 0 3%;
         outline: none;
 
+        @media screen and (max-width: 1300px) {
+          margin: 0 1%;
+
+        }
+
         @media screen and (max-width: 1024px) {
-          font-size: 30px;
+          font-size: 22px;
         }
 
         &:hover {
@@ -1265,6 +1380,10 @@ img {
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width: 1300px) {
+          width: 100%;
+        }
+
         &:hover button {
           opacity: 1;
         }
@@ -1274,6 +1393,10 @@ img {
         width: 60%;
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 1300px) {
+          width: 100%;
+        }
 
         &:hover button {
           opacity: 1;
@@ -1390,9 +1513,10 @@ img {
     display: flex;
     margin-bottom: 185px;
     margin-top: 60px;
+    flex-wrap: wrap;
 
     .partner-slide {
-      width: 25%;
+      width: 20%;
       cursor: pointer;
       display: flex;
       justify-content: center;
@@ -1401,6 +1525,12 @@ img {
       border: 1px solid #ececec;
       position: relative;
       overflow: hidden;
+      box-sizing: border-box;
+
+      @media screen and (max-width: 1300px) {
+        height: 20vh;
+        width: 25%;
+      }
 
       &:hover {
         .inner-slide {
@@ -1470,6 +1600,11 @@ img {
     transition: $anim;
     opacity: 0.5;
     filter: grayscale(1);
+
+    @media screen and (max-width: 1300px) {
+      height: 20vh;
+      width: 25%;
+    }
 
     &:hover {
       opacity: 1;
@@ -1542,6 +1677,16 @@ img {
     padding-left: 114/1366*100%;
   }
 
+  .bottom {
+    @media screen and (max-width: 1000px) {
+      position: absolute;
+      bottom: 20vh;
+      width: 100%;
+      left: 60px;
+      padding-right: 120px;
+    }
+  }
+
   .name {
     font-family: HR, Arial, sans-serif;
     font-size: 48px;
@@ -1608,6 +1753,7 @@ img {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   z-index: -9999;
   opacity: 0;
@@ -1618,8 +1764,12 @@ img {
 
   .left {
     min-width: 40vw;
-    height: 100vh;
+    height: 50vh;
     position: relative;
+
+    @media screen and (max-width: 1300px){
+      min-width: 100vw;
+    }
 
     .logo {
       position: absolute;
@@ -1640,6 +1790,10 @@ img {
     display: flex;
     flex-direction: column;
     padding: 61px 114px 45px 114/1366*100%;
+
+    @media screen and (max-width: 1300px) {
+      width: 100%;
+    }
   }
 
   .name {
@@ -3046,7 +3200,7 @@ img {
   }
 
   .header {
-    height: 51px;
+    height: auto;
   }
 
   .header .language-header {

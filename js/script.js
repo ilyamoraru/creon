@@ -31,6 +31,15 @@ $(document).ready(function() {
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+        ]
     });
 
     $('.structure-slider').slick({
@@ -61,6 +70,15 @@ $(document).ready(function() {
         slidesToScroll: 1,
         infinite: false,
     });
+
+    if (window.matchMedia("(max-width: 1300px)").matches) {
+        $('.corp2-list').slick({
+            arrows: false,
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+        })
+    }
 
     //считаем слайды
 
