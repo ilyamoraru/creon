@@ -2085,8 +2085,8 @@ img {
   background: white;
 }
 
-@media screen and (max-width: 1000px) {
-  ..part-modal {
+@media screen and (max-width: 1300px) {
+  .part-modal {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
