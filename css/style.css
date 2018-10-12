@@ -2590,6 +2590,10 @@ img {
   }
 }
 
+.green-page {
+  overflow: hidden;
+}
+
 .green-page .green-block1 {
   padding-top: 250px;
   padding-bottom: 143px;
@@ -2597,6 +2601,12 @@ img {
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
+}
+
+@media screen and (max-width: 1025px) {
+  .green-page .green-block1 {
+    padding-bottom: 310px;
+  }
 }
 
 .green-page .green-block1 .subtitle {
@@ -2770,6 +2780,12 @@ img {
           background-size: cover;
 }
 
+@media screen and (max-width: 1000px) {
+  .green-page .green-block4 {
+    background-position: 50% 50%;
+  }
+}
+
 .green-page .green-block4 .title {
   font-family: HR, Arial, sans-serif;
   font-size: 48px;
@@ -2939,6 +2955,12 @@ img {
 
 .green-page .green-block6 .custom-padding img {
   margin-right: 110px;
+}
+
+@media screen and (max-width: 1024px) {
+  .green-page .green-block6 .custom-padding img {
+    margin-right: 50px;
+  }
 }
 
 .green-page .green-block6 .title {

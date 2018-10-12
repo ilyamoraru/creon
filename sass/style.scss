@@ -2175,12 +2175,18 @@ img {
 //green ecnomic page
 
 .green-page {
+  overflow: hidden;
+
   .green-block1 {
     padding-top: 250px;
     padding-bottom: 143px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    @media screen and (max-width: 1025px) {
+      padding-bottom: 310px;
+    }
 
     .subtitle {
       font-family: Roboto, Arial, sans-serif;
@@ -2340,6 +2346,10 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media screen and (max-width: 1000px) {
+      background-position: 50% 50%;
+    }
+
     .title {
       font-family: HR, Arial, sans-serif;
       font-size: 48px;
@@ -2487,6 +2497,10 @@ img {
 
       img {
         margin-right: 110px;
+
+        @media screen and (max-width: 1024px) {
+          margin-right: 50px;
+        }
       }
     }
 
