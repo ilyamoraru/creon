@@ -2944,6 +2944,8 @@ img {
 //post page
 
 .post-page {
+  overflow: hidden;
+
   .post-block1 {
     background: url('../img/post/bg-mask.png');
     background-repeat: no-repeat;
@@ -2952,6 +2954,8 @@ img {
     padding-top: 134px;
     padding-bottom: 140px;
     margin-bottom: 80px;
+
+
   }
 
   .bread-post {
@@ -2999,6 +3003,16 @@ img {
 
   .post-wrap {
     position: relative;
+
+    @media screen and (max-width: 1000px) {
+      padding-left: 0;
+      padding-right: 0;
+
+      p, i, b, blochquote{
+        padding-left:25px;
+        padding-right: 25px;
+      }
+    }
   }
 
   .post-cont {
@@ -3007,8 +3021,13 @@ img {
     top: 0;
     max-width: 340px;
 
+
+
     @media screen and (max-width: 1280px) {
-      max-width: 250px;
+      display: flex;
+      position: relative;
+      width: 100%;
+      max-width: 100%;
     }
 
     .link {
@@ -3019,6 +3038,7 @@ img {
 
       @media screen and (max-width: 1280px) {
       height: 250px;
+        width: 50%;
       }
 
       a {
@@ -3055,9 +3075,26 @@ img {
         transition: $anim;
       }
     }
+
+    .link1 {
+      h3 {
+
+        text-align: right;
+      }
+
+      img {
+        align-self: flex-start;
+      }
+
+      &:hover {
+        a img {
+          transform: translateX(-10px);
+        }
+      }
+    }
   }
 
-  .col-lg-9 {
+  .col-xl-9 {
     p {
       font-family: HR, Arial, sans-serif;
       font-size: 18px;
