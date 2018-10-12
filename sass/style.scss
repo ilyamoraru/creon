@@ -2093,11 +2093,12 @@ img {
 
   .partners-slider {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 185px;
     margin-top: 60px;
 
     .partner-slide {
-      width: 25%;
+      width: 20%;
       cursor: pointer;
       display: flex;
       justify-content: center;
@@ -2106,6 +2107,11 @@ img {
       border: 1px solid #ececec;
       position: relative;
       overflow: hidden;
+
+      @media screen and (max-width: 1280px) {
+        width: 25%;
+        height: 20vh;
+      }
 
       &:hover {
         .inner-slide {
@@ -2129,6 +2135,10 @@ img {
         display: flex;
         flex-direction: column;
 
+        @media screen and (max-width: 1280px) {
+          padding: 20px;
+        }
+
         &::before {
           content: url('../img/icons/left_arrow.svg');
           position: absolute;
@@ -2141,12 +2151,20 @@ img {
           font-size: 18px;
           margin-bottom: 10px;
           color: white;
+
+          @media screen and (max-width: 1280px) {
+            font-size: 14px;
+          }
         }
 
         .position {
           font-family: HR, Arial, sans-serif;
           font-size: 18px;
           color: white;
+
+          @media screen and (max-width: 1280px) {
+            font-size: 14px;
+          }
         }
 
       }
@@ -2638,6 +2656,10 @@ img {
     color: black;
     margin-bottom: 71px;
 
+    @media screen and (max-width: 1000px) {
+      font-size: 14px;
+    }
+
     p {
       padding: 12px 26px;
       cursor: pointer;
@@ -2710,7 +2732,7 @@ img {
       margin-bottom: 30px;
 
       @media screen and (max-width: 1024px) {
-        max-width: 100%;
+        max-width: 38%;
       }
     }
   }
@@ -2745,12 +2767,21 @@ img {
     display: flex;
     margin-bottom: 90px;
 
+    @media screen and (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
+
     .form-desc {
       font-family: HR, Arial, sans-serif;
       font-size: 18px;
       color: #000;
       width: 40%;
       margin-right: 100px;
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
 
     .blog-form {
