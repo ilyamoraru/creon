@@ -252,4 +252,16 @@ $(document).ready(function() {
         $('.block-news'+number).addClass('block-news_show');
     });
 
+    //mobiel menu
+
+    $('.burger').click(function() {
+        $('body, html').css('overflow', 'hidden');
+       $('.mobile-menu').addClass('mobile-menu_show');
+    });
+
+    $('.close-menu').click(function() {
+       $('body, html').css('overflow', 'auto');
+       $('.mobile-menu').removeClass('mobile-menu_show');
+    });
+
 });
