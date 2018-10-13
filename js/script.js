@@ -69,6 +69,15 @@ $(document).ready(function() {
        dots: true,
        slidesToShow: 3,
        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 440,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
 
     $('.post-slider').slick({
