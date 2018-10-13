@@ -8,6 +8,7 @@ $(document).ready(function() {
         dots: false,
         infinite: false,
         fade: true,
+
     });
 
     //nav in about page dates
@@ -39,6 +40,13 @@ $(document).ready(function() {
                     slidesToScroll: 3,
                 }
             },
+            {
+                breakpoint: 441,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+    }
+            }
         ]
     });
 
@@ -141,10 +149,15 @@ $(document).ready(function() {
            //down
            $('.header').removeClass('header-up');
            $('.header').css('transform', 'translateY(-20vh');
+           $('.mob-toogle-blog').addClass('mob-toogle-blog_up');
+           $('.mob-toogle-blog').css('transform', 'translateY(-20vh)');
        } else {
            //up
            $('.header').addClass('header-up');
            $('.header').css('transform', 'translateY(0');
+           $('.mob-toogle-blog').removeClass('mob-toogle-blog_up');
+
+           $('.mob-toogle-blog').css('transform', 'translateY(0vh)');
        }
        lastScrollTop = st;
 
@@ -191,6 +204,10 @@ $(document).ready(function() {
 
     //считаем колиество постов на about
 
+    if (window.matchMedia("(max-width: 1300px)").matches) {
+        $('.hidden_mob').addClass('hidden-client');
+    }
+
     var length_posts = $('.hidden-client').length;
 
     $('.showmore-client span').html(length_posts);
@@ -199,6 +216,9 @@ $(document).ready(function() {
        $(this).hide();
        $('.hidden-client').removeClass('hidden-client');
     });
+
+
+
 
     //show boss modal
 
@@ -237,13 +257,19 @@ $(document).ready(function() {
 
     $('.contacts-item').click(function() {
        $('.contacts-item').removeClass('open-item_cont');
-        $('.contacts-item').removeClass('order-100');
+       $('.contacts-item').removeClass('order-100');
        $(this).addClass('open-item_cont');
         $(this).addClass('order-100');
        var number_map = $(this).attr('data-address');
        $('.map').css('display', 'none');
        $('#cont'+number_map+'-map').css('display', 'block');
     });
+
+    // if (window.matchMedia("(max-width: 440px)").matches) {
+    //     $('.order-100').click(function() {
+    //         $('.contacts-item').addClass('contacts-item_height');
+    //     });
+    // }
 
     //validation in blog
 
@@ -270,7 +296,7 @@ $(document).ready(function() {
         $('.block-news'+number).addClass('block-news_show');
     });
 
-    //mobiel menu
+    //mobile menu
 
     $('.burger').click(function() {
         $('body, html').css('overflow', 'hidden');
@@ -280,6 +306,12 @@ $(document).ready(function() {
     $('.close-menu').click(function() {
        $('body, html').css('overflow', 'auto');
        $('.mobile-menu').removeClass('mobile-menu_show');
+    });
+
+    $('.mob-toogle-blog select').change(function() {
+       var val = $(this).val();
+       $('.mob-sec').removeClass('mob-sec_show');
+       $('.mob'+val).addClass('mob-sec_show');
     });
 
 });
