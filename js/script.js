@@ -77,6 +77,15 @@ $(document).ready(function() {
             dots: true,
             slidesToShow: 3,
             slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 440,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+            ]
         })
     }
 
