@@ -89,6 +89,15 @@ $(document).ready(function() {
         })
     }
 
+    if (window.matchMedia("(max-width: 1300px)").matches) {
+        $('.partners-slider').slick({
+           arrows: false,
+           dots: true,
+           slidesToShow: 2,
+           slidesToScroll: 2,
+        });
+    };
+
     //считаем слайды
 
     var number_slides = $('.post-slider img').length;

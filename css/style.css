@@ -2066,6 +2066,11 @@ img {
   border: none;
   right: 0;
   top: 0;
+  transition: all 0.2s linear;
+}
+
+.boss-modal .close-modal:hover {
+  background: #194D92;
 }
 
 .boss-modal .close-modal:hover {
@@ -2100,7 +2105,12 @@ img {
 
 .part-modal {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   z-index: -9999;
   opacity: 0;
@@ -2112,10 +2122,6 @@ img {
 
 @media screen and (max-width: 1000px) {
   .part-modal {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -2124,13 +2130,14 @@ img {
 
 .part-modal .left {
   min-width: 40vw;
-  height: 50vh;
+  height: 100vh;
   position: relative;
 }
 
 @media screen and (max-width: 1300px) {
   .part-modal .left {
     min-width: 100vw;
+    height: 50vh;
   }
 }
 
@@ -2170,7 +2177,7 @@ img {
 }
 
 .part-modal .name {
-  font-family: HR, Arial, sans-serif;
+  font-family: HeB, Arial, sans-serif;
   font-size: 48px;
   color: #171717;
   margin-bottom: 16px;
@@ -3932,6 +3939,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .error-page .title {
@@ -4595,5 +4603,110 @@ img {
   .project-page .page-subtitle_big {
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  .error-page .title {
+    font-size: 140px;
+  }
+  .error-page {
+    overflow: hidden;
+  }
+  .structure-page .structure-slider {
+    margin-bottom: 40px;
+  }
+  .structure-page {
+    padding-top: 90px;
+  }
+  .structure-page .title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .structure-page .structure-slide {
+    font-size: 12px;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .structure-page .structure-slide img {
+    max-width: 185px;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .structure-page .corp-top {
+    padding-left: 0;
+  }
+  .structure-page .page-subtitle_big {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .structure-page .partners-slider {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .structure-page .partners-slider .partner-slide {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .structure-page .partners-slider .slick-dots {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .structure-page .partners-slider .slick-dots button {
+    width: 9px;
+    height: 9px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    padding: 0;
+    background: #C5c5c5;
+    margin: 0 5px;
+    outline: none;
+    font-size: 0;
+    border: none;
+  }
+  .structure-page .partners-slider .slick-dots .slick-active button {
+    width: 15px;
+    height: 15px;
+    background: #194D92;
+  }
+  .part-modal .name {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .part-modal .role, .part-modal .desc {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  .part-modal .right {
+    padding: 23px 35px 43px;
+  }
+  .part-modal .close-modal {
+    width: 50px;
+    height: 50px;
+  }
+  .part-modal .close-modal::after, .part-modal .close-modal::before {
+    top: 24px;
+    left: 17px;
   }
 }
